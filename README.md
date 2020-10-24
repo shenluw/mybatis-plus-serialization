@@ -7,4 +7,19 @@
 
 ### 使用说明
 
+##### 添加依赖gradle
+具体参考 https://jitpack.io/
+~~~
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+...
+dependencies {
+   implementation 'com.github.shenluw:mybatis-plus-serialization:1.0'
+}
+~~~
+##### 代码使用
 dubbo接口继承CRUDService即可，调用时使用CRUDService中方法和参数
